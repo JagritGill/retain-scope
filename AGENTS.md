@@ -29,8 +29,9 @@ For compiler setup use `npm ci --ignore-scripts --no-audit --no-fund`, then
 `npm run check:types`. The local build verified that command with existing
 TypeScript 6.0.3 on PATH; clean installation was not run. Strict checking covers
 `src/**/*.ts`, not the JavaScript CLI/tests/checker. No linter is configured.
-Node 24.4.1 was tested locally; configured Node 24/26 CI and publication are
-pending, so verify actual final-commit results before making CI claims.
+Node 24.4.1 was tested locally. The initial published commit passed Node 24/26 CI,
+including clean compiler installation; the README links that observed run.
+Verify actual final-commit results before making claims about subsequent changes.
 
 ## Invariants and pitfalls
 

@@ -136,8 +136,11 @@ common secret/private-path patterns. It is a safeguard, not a proof that every
 possible secret can be detected; inspect the staged diff before publication.
 
 [CI configuration](.github/workflows/ci.yml) targets Node 24 and 26, including
-clean compiler installation. **Remote publication and CI are pending** for this
-local build; Node 26 and that installation path have not been verified here.
+clean compiler installation. The [initial published commit's CI run](https://github.com/JagritGill/retain-scope/actions/runs/42396729636)
+passed both jobs on November 7, 2026. Node 26 and clean installation were verified
+in CI, not on the Mac. Check the [workflow runs](https://github.com/JagritGill/retain-scope/actions)
+for the specific commit you intend to use; this historical result is not a
+guarantee for later changes.
 
 ## Design, provenance and limits
 

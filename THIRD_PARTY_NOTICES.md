@@ -17,5 +17,6 @@ retain their own licenses; this project's MIT license does not relicense them:
 | actions/setup-node v7.1.0 | Configured CI runtime setup, pinned at `949feb2413d6458794dcd2491c4babbbce0c15c1` | [MIT license](https://github.com/actions/setup-node/blob/949feb2413d6458794dcd2491c4babbbce0c15c1/LICENSE) |
 
 The package lock records the compiler's version, registry URL and integrity.
-CI is configured but has not run for this local-only build. No external review
-service, telemetry, hosted API or asset is required by the program.
+The initial published commit passed the configured CI; the README records that
+run. No external review service, telemetry, hosted API or asset is required by
+the program.
