@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "nodes": [
+    {"id": "app", "bytes": "10", "refs": ["left", "right"]},
+    {"id": "left", "bytes": "10", "refs": ["payload"]},
+    {"id": "right", "bytes": "10", "refs": ["payload"]},
+    {"id": "payload", "bytes": "1000", "refs": []}
+  ],
+  "roots": ["app", "payload"],
+  "remove": ["left", "right"]
+}

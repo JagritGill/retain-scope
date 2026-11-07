@@ -1,0 +1,16 @@
+{
+  "name": "retain-scope",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Explain individual and joint retention in supplied object-reference graphs",
+  "license": "MIT",
+  "engines": {"node": ">=24.4.0"},
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check:types": "tsc --project tsconfig.json",
+    "check:release": "node scripts/check-release.mjs",
+    "demo": "node cli.mjs examples/shared-caches.json"
+  },
+  "devDependencies": {"typescript": "6.0.3"}
+}

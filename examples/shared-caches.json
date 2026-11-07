@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "nodes": [
+    {"id": "app", "bytes": "64", "refs": ["left", "right", "metrics"]},
+    {"id": "left", "bytes": "32", "refs": ["blob"]},
+    {"id": "right", "bytes": "48", "refs": ["blob"]},
+    {"id": "blob", "bytes": "4096", "refs": ["chunk"]},
+    {"id": "chunk", "bytes": "1024", "refs": ["blob"]},
+    {"id": "metrics", "bytes": "16", "refs": []},
+    {"id": "orphan", "bytes": "8", "refs": []}
+  ],
+  "roots": ["app"],
+  "remove": ["left", "right"]
+}

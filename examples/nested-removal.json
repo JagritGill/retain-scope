@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "nodes": [
+    {"id": "outer", "bytes": "10", "refs": ["inner"]},
+    {"id": "inner", "bytes": "20", "refs": ["leaf"]},
+    {"id": "leaf", "bytes": "30", "refs": []}
+  ],
+  "roots": ["outer"],
+  "remove": ["outer", "inner"]
+}
